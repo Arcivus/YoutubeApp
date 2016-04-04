@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Youtube Viewer</title>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+	<section id="ytApp">
+		<header id="header">
+			<input id="search" placeholder="Insert request..."/>
+			<button id="searchButton">Search!</button>
+			<span>Sort by: </span>
+			<select id="sortTypeSelect">
+				<option value="byViews">Views</option>
+				<option value="byAlphabet">Alphabet</option>
+			</select>
+		</header>
+		<section id="main">
+			<h2>Search results</h2>
+			<div id="videos">
+
+			</div>
+			<div id="pages">
+				<a href="#/1">1</a>
+				<a href="#/2">2</a>
+				<a href="#/3">3</a>
+				<a href="#/4">4</a>
+			</div>
+		</section>
+
+		<footer id="footer">
+
+		</footer>
+	</section>
+
+	<div id='info'>
+		<p>Written by <a href='https://github.com/Arcivus'>Sergey Kozhurkin</a></p>
+	</div>
+
+	<script type='text/template' id='video-template'>
+		<a  href="https://www.youtube.com/watch?v=<%=id%>"><img class="thumbnail" src="<%= thumbnailURL %>"/></a>
+		<ul class="videoInfo">
+			<li class="videoTitle"><a  href="https://www.youtube.com/watch?v=<%=id%>"><%=videoTitle%></a></li>
+			<li class="channelTitle"><%=channelTitle%></li>
+			<li class="videoViewsCount"><%=viewsCount%> views</li>
+		</ul>
+	</script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+
+
+	<script src="js/model/video.js"></script>
+	<script src="js/collection/videos.js"></script>
+	<script src="js/views/videoView.js"></script>
+	<script src="js/views/appView.js"></script>
+	<script src="js/router/router.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>
+

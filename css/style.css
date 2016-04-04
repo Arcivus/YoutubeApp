@@ -1,0 +1,105 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #f6f6f6;
+}
+#ytApp{
+	width: 70%;
+	margin: auto;
+}
+#header{
+	height: 40px;
+	background: #ffffff;
+	padding: 10px 0 0 20px;
+	margin-bottom: 5px;
+}
+#search{
+	width: 35%;
+	height: 28px;
+	font-size: 20px;
+}
+#searchButton{
+	padding-bottom: 3px;
+	height: 26px;
+	font-size: 18px;
+	background-color: #e62117;
+	color: #ffffff;
+	border: 1px black solid;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0 2px #999;
+}
+#searchButton:active{
+	box-shadow:0 0 #999;
+	transform: translateY(2px);
+}
+#main{
+	height: 340px;
+	background: #ffffff;
+	padding: 10px 20px ;
+}
+h2{
+	margin: 0 0 20px 0;
+}
+#videos{
+	width: 100%;
+	height: 250px;
+	margin: auto;
+}
+.videoContainer{
+	width: 258px;
+	height: 250px;
+	float: left;
+	background-color: #fff;
+}
+.thumbnail{
+	width: 250px;
+	height: 140px;
+	background-color: gray;
+	margin-left: 4px;
+}
+.videoInfo{
+	margin: 2px;
+	padding: 0px;
+	list-style: none;
+}
+.videoInfo li{
+	margin: 5px 0;
+}
+.videoTitle{
+	font-size: 18px;
+	color: #167ac6;
+}
+.channelTitle, .videoViewsCount{
+	font-size: 14px;
+	color: #767676;
+}
+#pages{
+	width: 140px;
+	margin: 20px auto;
+}
+#pages a{
+	color: black;
+	font-size: 18px;
+	text-decoration: none;
+	margin: 0;
+	padding: 2px 7px;
+	background-color: rgb(247, 244, 244);
+	border: 1px solid #c6c6c6;
+	border-radius: 2px;
+}
+#pages a:hover{
+	background-color: rgb(232, 222, 222);
+}
+.hidden{
+	display: none;
+}
+#info{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 12px;
+}
+header span{
+	margin-left: 15px;
+}
